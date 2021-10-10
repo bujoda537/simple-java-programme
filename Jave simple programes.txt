@@ -1,0 +1,183 @@
+
+
+============================================================================VARIABLES==========================================================================
+
+------understand the types of variables in java------
+
+public class A  
+{  
+    static int m=100;//static variable  
+    void method()  
+    {    
+        int n=90;//local variable    
+    }  
+    public static void main(String args[])  
+    {  
+        int data=50;//instance variable    
+    }
+}  
+______________________________________________________________________
+
+-------Add Two Numbers------
+
+public class Main {
+	public static void main(String[] args) {
+		int a=10;    
+        int b=10;    
+        int c=a+b;    
+        System.out.println(c);
+	}
+}
+
+_______________________________________________________________________
+
+------Widening------
+
+public class Main {
+	public static void main(String[] args) {
+		int a=10;  
+        float f=a;  
+        System.out.println(a);  
+        System.out.println(f); 
+	}
+}
+
+__________________________________________________________________________
+
+------Narrowing (Typecasting)------
+
+public class Main {
+	public static void main(String[] args) {
+	float f=10.5f;  
+        //int a=f;//Compile time error  
+        int a=(int)f;  
+        System.out.println(f);  
+        System.out.println(a); 
+	}
+}
+__________________________________________________________________________
+
+------Adding Lower Type------
+
+public class Main {
+	public static void main(String[] args) {
+	byte a=10;  
+    byte b=10;  
+    //byte c=a+b;//Compile Time Error: because a+b=20 will be int  
+    byte c=(byte)(a+b);  
+    System.out.println(c); 
+	}
+}
+_________________________________________________________________________
+
+============================================================================DATA TYPES==========================================================================
+
+
+------Int Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        int num;
+        num = 10;
+        System.out.println(num);
+    }
+}
+
+______________________________________________________________________________
+
+------Double Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        double num;
+        num = 10.5;
+        System.out.println(num);
+    }
+}
+
+___________________________________________________________________________________
+
+------Float Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        float num;
+        num = 10.5f;
+        System.out.println(num);
+    }
+}
+
+______________________________________________________________________________________
+
+------Char Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        char ch;
+        ch = 'e';
+        System.out.println(ch);
+    }
+}
+
+_______________________________________________________________________________________
+
+------String Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        String msg;
+        msg = "Let's learn Java";
+        System.out.println(msg);
+    }
+
+________________________________________________________________________________________
+
+------Boolen Data Type------
+
+public class main {
+
+    public static void main(String[] args) {
+        boolean a, b;
+        a = true;
+        b = false;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+_________________________________________________________________________________________
+
+------Implicit Conversion------
+
+class Test {
+
+    public static void main(String[] args) {
+        int n = 10;
+        char ch = 'h';
+        int sum = n + ch;
+        System.out.println(sum);
+    }
+}
+Initialization through reference
+
+class D3 {
+
+    public static void main(String[] args) {
+        int sum = 23;
+        int n = 7;
+        double avg;
+        avg = (double) sum / n;
+        System.out.println("Average = " + avg);
+    }
+}
+
+_____________________________________________________________________________________________
+
+============================================================================OOPS CONCEPT==========================================================================
+
+------Object Initialization through reference------
